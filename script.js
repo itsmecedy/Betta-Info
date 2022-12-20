@@ -41,7 +41,7 @@ let bettaTypesData = [
   },
   {
     id: "RosetailFeathertail",
-    img: "./asssets/Betta_RosetailFeathertail.png",
+    img: "./asssets/Betta_RoseTailFeatherTail.png",
     name: "Rosetail/Feathertail",
     desc: `A kind of halfmoon Betta, the rosetail (or feathertail Betta) also sports a fan-like tail, but has excessive branching and overlapping in its fin rays that resembles the ruffled appearance of a rose.`,
   },
@@ -49,7 +49,7 @@ let bettaTypesData = [
     id: "RoundTailFanTail",
     img: "./asssets/Betta_RoundTailFanTail.png",
     name: "Round Tail/Fan Tail",
-    desc: `Sometimes mistaken for other bettas, the round tail (or fan tail Betta) has a single tail that’s round and full.`,
+    desc: `Sometimes mistaken for other bettas, the round tail (or fan tail Betta) has a single tail that's round and full.`,
   },
   {
     id: "Veiltail",
@@ -64,7 +64,7 @@ let generateTypes = () => {
     .map((x) => {
       let { id, img, name, desc } = x;
       return `
-  <div class="rounded-xl p-5 text-center flex flex-col justify-center shadow hover:shadow-xl  hover:shadow-[#C63D41]">
+  <div class="rounded-xl md:p-2 p-5 text-center flex flex-col justify-center shadow hover:shadow-[#C63D41] hover:shadow-2xl  hover:bg-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
     <img src="${img}" alt="Crowntail.png" />
     <p class="text-[#C63D41] font-semibold pb-1 pt-4">${name}</p>
     <p>
