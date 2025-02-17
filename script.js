@@ -61,17 +61,16 @@ let bettaTypesData = [
 
 let generateTypes = () => {
   return (types.innerHTML = bettaTypesData
-    .map((x) => {
-      let { id, img, name, desc } = x;
+    .map((betta) => {
+      let { id, img, name, desc } = betta;
       return `
-  <div class="rounded-xl md:p-2 p-5 text-center flex flex-col justify-center shadow hover:shadow-[#C63D41] hover:shadow-2xl  hover:bg-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-    <img src="${img}" alt="Crowntail.png" />
-    <p class="text-[#C63D41] font-semibold pb-1 pt-4">${name}</p>
-    <p>
-      ${desc}
-    </p>
-  </div>
-    `;
+    <div id="${id}" class="rounded-xl md:p-2 p-5 text-center flex flex-col justify-center shadow hover:shadow-[#C63D41] hover:shadow-2xl hover:bg-red-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+      <img src="${img}" alt="Crowntail.png" />
+      <p class="text-[#C63D41] font-semibold pb-1 pt-4">${name}</p>
+      <p>
+        ${desc}
+      </p>
+    </div>`;
     })
     .join(""));
 };
